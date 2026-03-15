@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# 🏙️ GitHub City: An Immersive 3D Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **GitHub City**, a real-time, interactive 3D visualization of my GitHub repositories. Built with **React**, **Three.js**, and **Tailwind CSS**, this project transforms data into a living, breathing cyberpunk metropolis.
 
-Currently, two official plugins are available:
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Three.js](https://img.shields.io/badge/Threejs-black?style=for-the-badge&logo=three.dot.js&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌟 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🏗️ Dynamic Skyline
+Every building represents a repository. The **height** is determined by the project size, and the **color** reflects the primary programming language used.
 
-## Expanding the ESLint configuration
+### 🛸 Drone & Street View
+Switch between a tactical bird's-eye view and an immersive **Drone Mode**. Use `W`, `A`, `S`, `D` to fly through the skyscrapers and explore the grid.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### ⛈️ Real-time Environment
+- **Weather Sync:** Fetches real-world weather data based on your location (Rain, Snow, or Clear).
+- **Day/Night Cycle:** Automatically adjusts lighting and atmosphere based on your local time.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📊 Interactive Data Banks
+Hover over any building to reveal a sleek HUD displaying:
+- Repository Name
+- Detailed Language Breakdown (via GitHub API)
+- Direct Access Links
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🔒 The "Suhan" Protocol
+Hidden deep within the code lies a secret. Try typing the developer's name while in the city to trigger a **Top Secret** event and unlock the "Secret Tower."
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Frontend:** React 18 (Vite)
+- **3D Engine:** Three.js / @react-three/fiber
+- **Helper Libraries:** @react-three/drei (Controls, Shaders)
+- **Styling:** Tailwind CSS v4 + PostCSS
+- **Data Source:** GitHub REST API
+- **Weather:** Open-Meteo API
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/SuhanArda/github-city.git](https://github.com/SuhanArda/github-city.git)
+   cd github-city
+
+2. Install dependencies:
+   ```bash
+   npm install
+   
+3. Run the development server:
+   ```bash
+   npm run dev
+   
+4. Build for production:
+   ```bash
+   npm run build
+   
+🎮 Controls
+ActionControlRotate CameraLeft Click + Drag (Orbit Mode)Move Drone W A S D (Drone Mode)InteractHover / Click on BuildingsTrigger Easter EggType suhan on your keyboard
