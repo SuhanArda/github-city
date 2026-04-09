@@ -1,6 +1,6 @@
 
 ![GitHub City Ekran Görüntüsü](city_screenshot.png)
->>>>>>> ed06e2a758b82093ffbf16fddd038b4606a30101
+
 # 🏙️ GitHub City: An Immersive 3D Portfolio
 
 Welcome to **GitHub City**, a real-time, interactive 3D visualization of my GitHub repositories. Built with **React**, **Three.js**, and **Tailwind CSS**, this project transforms data into a living, breathing cyberpunk metropolis.
