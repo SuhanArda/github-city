@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 ![GitHub City Ekran Görüntüsü](city_screenshot.png)
 >>>>>>> ed06e2a758b82093ffbf16fddd038b4606a30101
 # 🏙️ GitHub City: An Immersive 3D Portfolio
